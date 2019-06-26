@@ -1,0 +1,47 @@
+C51 COMPILER V9.53.0.0   SQUARE_WAVE                                                       07/02/2018 17:54:06 PAGE 1   
+
+
+C51 COMPILER V9.53.0.0, COMPILATION OF MODULE SQUARE_WAVE
+OBJECT MODULE PLACED IN .\Square_Wave.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE ..\TImer_Counters\Square_Wave.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXT
+                    -END PRINT(.\Square_Wave.lst) TABS(2) OBJECT(.\Square_Wave.obj)
+
+line level    source
+
+   1          #include<reg51.h>
+   2          
+   3          void main(){
+   4   1      
+   5   1      unsigned int x;
+   6   1      while(1){
+   7   2      
+   8   2        for(x = 0; x<112 ; x++)
+   9   2        {
+  10   3          TMOD = 0x00;
+  11   3          TH0  = 0;
+  12   3          TL0  = 0;
+  13   3          TR0 = 1;
+  14   3          while(TF0 == 0);
+  15   3          TF0 = 0;
+  16   3          TR0 = 0;
+  17   3        }
+  18   2        
+  19   2        P1 = ~P1;
+  20   2      }
+  21   1      
+  22   1      
+  23   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     35    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

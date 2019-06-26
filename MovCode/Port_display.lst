@@ -1,0 +1,29 @@
+A51 MACRO ASSEMBLER  PORT_DISPLAY                                                         06/29/2018 11:36:01 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN .\Port_display.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE ..\PortProgramming\Port_display.asm SET(SMALL) DEBUG PRINT(.\Port_displ
+                      ay.lst) OBJECT(.\Port_display.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     org 00h
+0000 7455              2             mov a,#55h
+0002 F590              3             mov P1,a
+                       4     end
+A51 MACRO ASSEMBLER  PORT_DISPLAY                                                         06/29/2018 11:36:01 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+P1 . . . . . . . .  D ADDR   0090H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

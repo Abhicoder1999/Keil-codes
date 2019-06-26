@@ -1,0 +1,10 @@
+
+check the basic C_Code for info
+Q WAP to 70h P2 and 90h P3
+Q WAP to toggle/Complement all the ports using delay
+Q Monitor P1.3 if it is 1 then addition between P2 and P3 sore it in P0
+ or subtraction between P2 and P3 store the result in P0
+
+*if you want to have a delay use self terminating loop like for(;;); or while();
+* For the case case complement use the negation '~'
+

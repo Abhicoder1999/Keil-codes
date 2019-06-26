@@ -1,0 +1,41 @@
+A51 MACRO ASSEMBLER  ADD1_10                                                              06/23/2018 17:47:49 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN .\Add1-10.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE ..\AddOp\Add1-10.asm SET(SMALL) DEBUG PRINT(.\Add1-10.lst) OBJECT(.\Add
+                      1-10.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     org 00h
+                       2             
+0000 2401              3             add a,#1h
+0002 2402              4             add a,#2h
+0004 2403              5             add a,#3h
+0006 2404              6             add a,#4h
+0008 2405              7             add a,#5h
+000A 2406              8             add a,#6h
+000C 2407              9             add a,#7h
+000E 2408             10             add a,#8h
+0010 2409             11             add a,#9h
+0012 240A             12             add a,#0Ah
+                      13             
+                      14     
+                      15     
+                      16     end
+                                     
+A51 MACRO ASSEMBLER  ADD1_10                                                              06/23/2018 17:47:49 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

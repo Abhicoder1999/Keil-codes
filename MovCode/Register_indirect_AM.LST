@@ -1,0 +1,30 @@
+A51 MACRO ASSEMBLER  REGISTER_INDIRECT_AM                                                 06/28/2018 17:24:11 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN Register_indirect_AM.OBJ
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE Register_indirect_AM.a51 SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     org 00h
+0000 750510            2             mov 5,#10h
+0003 7805              3             mov r0,#5
+0005 86F0              4             mov b, @r0
+                       5     
+                       6     end 
+A51 MACRO ASSEMBLER  REGISTER_INDIRECT_AM                                                 06/28/2018 17:24:11 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

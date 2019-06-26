@@ -1,0 +1,33 @@
+A51 MACRO ASSEMBLER  COPYTOBANK0                                                          06/23/2018 16:34:13 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN CopyToBank0.OBJ
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE CopyToBank0.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     org 00h
+0000 7840              2             mov r0,#40h
+0002 7940              3             mov r1,#40h
+0004 7A40              4             mov r2,#40h
+0006 7B40              5             mov r3,#40h
+0008 7C40              6             mov r4,#40h
+000A 7D40              7             mov r5,#40h
+000C 7E40              8             mov r6,#40h
+000E 7F40              9             mov r7,#40h
+                      10     end
+A51 MACRO ASSEMBLER  COPYTOBANK0                                                          06/23/2018 16:34:13 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

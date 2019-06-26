@@ -1,0 +1,22 @@
+*There are 4 port in the case of 8051
+
+*P0 - low default used with regpack
+
+*P1,P2,P3 - by default high
+
+*AT89C51 in proteus search for the format
+ actual frequency is 11.0592 MHz
+
+*Remember the hex file in the project remains same and keeps updasting the same 
+hex file is the project directed folder
+
+Q1 WAP to send to #40h to port0 #50h to port1 , #60h to port2 and #70h to port3
+Q2 WAP to send 15h to port zero, 19h to port1 ,21h to port2 and them and store
+them port3
+Q3 WAP to send 13h to port0 and 17h to port1 add then and store them in port2
+then compliment the result and store it in port3
+
+CPL is used for complement it is uninary function
+CPL a
+
+here  a = complement(a)

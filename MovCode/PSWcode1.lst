@@ -1,0 +1,70 @@
+A51 MACRO ASSEMBLER  PSWCODE1                                                             06/25/2018 11:26:26 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN .\PSWcode1.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE ..\PSWCode\PSWcode1.a51 SET(SMALL) DEBUG PRINT(.\PSWcode1.lst) OBJECT(.
+                      \PSWcode1.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     org 00h
+0000 C2D3              2             clr psw.3
+0002 C2D4              3             clr psw.4
+0004 7812              4             mov r0,#12h
+0006 7912              5             mov r1,#12h
+0008 7A12              6             mov r2,#12h
+000A 7B12              7             mov r3,#12h
+000C 7C12              8             mov r4,#12h
+000E 7D12              9             mov r5,#12h
+0010 7E12             10             mov r6,#12h
+0012 7F12             11             mov r7,#12h
+                      12             
+0014 D2D3             13             setb psw.3
+0016 C2D4             14             clr psw.4
+0018 7812             15             mov r0,#12h
+001A 7912             16             mov r1,#12h
+001C 7A12             17             mov r2,#12h
+001E 7B12             18             mov r3,#12h
+0020 7C12             19             mov r4,#12h
+0022 7D12             20             mov r5,#12h
+0024 7E12             21             mov r6,#12h
+0026 7F12             22             mov r7,#12h
+                      23             
+0028 C2D3             24             clr psw.3
+002A D2D4             25             setb psw.4
+002C 7812             26             mov r0,#12h
+002E 7912             27             mov r1,#12h
+0030 7A12             28             mov r2,#12h
+0032 7B12             29             mov r3,#12h
+0034 7C12             30             mov r4,#12h
+0036 7D12             31             mov r5,#12h
+0038 7E12             32             mov r6,#12h
+003A 7F12             33             mov r7,#12h
+                      34     
+003C D2D3             35         setb psw.3
+003E D2D4             36             setb psw.4
+0040 7812             37             mov r0,#12h
+0042 7912             38             mov r1,#12h
+0044 7A12             39             mov r2,#12h
+0046 7B12             40             mov r3,#12h
+0048 7C12             41             mov r4,#12h
+004A 7D12             42             mov r5,#12h
+004C 7E12             43             mov r6,#12h
+004E 7F12             44             mov r7,#12h
+                      45     end
+A51 MACRO ASSEMBLER  PSWCODE1                                                             06/25/2018 11:26:26 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+PSW. . . . . . . .  D ADDR   00D0H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

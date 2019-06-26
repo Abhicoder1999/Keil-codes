@@ -1,0 +1,11 @@
+UART
+
+one of the features that make this microcontroller  so powerfu lis an integrated UART
+Better known as the serial port.It is a duplex port, which eans that it ccan  transmit 
+and recieve datas simultaneously.All the programmers need to do is to simply
+select serial port mode and the baud rate. when the programmer is such configured, serial
+data sending is done by eritting ti the register SBUF while data recivieng is done by reading
+the same register
+
+Q WAP To send your name to the virtual terminal
+Q WAP to transmit and recieve a charecter

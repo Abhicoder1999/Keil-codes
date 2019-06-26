@@ -1,0 +1,29 @@
+A51 MACRO ASSEMBLER  COPYTOAANDB                                                          06/23/2018 16:36:16 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN CopyToAandB.OBJ
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE CopyToAandB.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     org 00h
+0000 7440              2             mov A,#40h
+0002 75F050            3             mov B,#50h
+0005 7805              4             mov r0,#5h
+                       5     end
+A51 MACRO ASSEMBLER  COPYTOAANDB                                                          06/23/2018 16:36:16 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

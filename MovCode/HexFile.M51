@@ -1,0 +1,141 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        07/08/2018  13:08:45  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\GPS_check.obj TO HexFile
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\GPS_check.obj (GPS_CHECK)
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C_INIT)
+
+
+LINK MAP OF MODULE:  HexFile (GPS_CHECK)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     000DH     UNIT         ?DT?GPS_CHECK
+            IDATA   0015H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     0008H                  *** GAP ***
+            CODE    000BH     0003H     ABSOLUTE     
+                    000EH     0015H                  *** GAP ***
+            CODE    0023H     0003H     ABSOLUTE     
+                    0026H     07DAH                  *** GAP ***
+            CODE    0800H     008CH     UNIT         ?C_C51STARTUP
+            CODE    088CH     0030H     UNIT         ?PR?TIMER0?GPS_CHECK
+            CODE    08BCH     002FH     UNIT         ?PR?SERIAL?GPS_CHECK
+            CODE    08EBH     0020H     UNIT         ?PR?MAIN?GPS_CHECK
+            CODE    090BH     0014H     UNIT         ?C_INITSEG
+
+
+
+OVERLAY MAP OF MODULE:   HexFile (GPS_CHECK)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?GPS_CHECK
+  +--> ?C_INITSEG
+
+
+
+SYMBOL TABLE OF MODULE:  HexFile (GPS_CHECK)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        GPS_CHECK
+  C:0000H         SYMBOL        _ICE_DUMMY_
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/08/2018  13:08:45  PAGE 2
+
+
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  C:08BCH         PUBLIC        serial
+  D:00A8H         PUBLIC        IE
+  B:0098H.1       PUBLIC        TI
+  C:08EBH         PUBLIC        main
+  D:0099H         PUBLIC        SBUF
+  D:0098H         PUBLIC        SCON
+  D:0089H         PUBLIC        TMOD
+  D:008CH         PUBLIC        TH0
+  D:008DH         PUBLIC        TH1
+  D:008AH         PUBLIC        TL0
+  C:088CH         PUBLIC        timer0
+  B:0088H.4       PUBLIC        TR0
+  B:0088H.6       PUBLIC        TR1
+  B:00B0H.7       PUBLIC        a
+  D:0008H         PUBLIC        x
+  D:000AH         PUBLIC        y
+  D:000CH         PUBLIC        z
+  -------         PROC          TIMER0
+  C:088CH         LINE#         6
+  C:0890H         LINE#         8
+  C:0898H         LINE#         9
+  C:08A1H         LINE#         10
+  C:08A1H         LINE#         11
+  C:08A4H         LINE#         12
+  C:08A9H         LINE#         14
+  C:08A9H         LINE#         16
+  C:08A9H         LINE#         17
+  C:08ABH         LINE#         18
+  C:08AEH         LINE#         19
+  C:08B1H         LINE#         20
+  C:08B7H         LINE#         22
+  C:08B7H         LINE#         23
+  -------         ENDPROC       TIMER0
+  -------         PROC          SERIAL
+  C:08BCH         LINE#         25
+  C:08C5H         LINE#         27
+  C:08C7H         LINE#         28
+  C:08D2H         LINE#         29
+  C:08D4H         LINE#         31
+  C:08D4H         LINE#         33
+  C:08D4H         LINE#         34
+  C:08DCH         LINE#         35
+  C:08E4H         LINE#         37
+  C:08E4H         LINE#         38
+  -------         ENDPROC       SERIAL
+  -------         PROC          MAIN
+  C:08EBH         LINE#         40
+  C:08EBH         LINE#         41
+  C:08EBH         LINE#         42
+  C:08EEH         LINE#         43
+  C:08F1H         LINE#         44
+  C:08F3H         LINE#         45
+  C:08F6H         LINE#         46
+BL51 BANKED LINKER/LOCATER V6.22                                                      07/08/2018  13:08:45  PAGE 3
+
+
+  C:08F9H         LINE#         47
+  C:08FCH         LINE#         48
+  C:08FEH         LINE#         49
+  C:0900H         LINE#         50
+  C:0903H         LINE#         51
+  C:0903H         LINE#         52
+  C:0903H         LINE#         53
+  C:0909H         LINE#         54
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        GPS_CHECK
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0098H BYTE ( 7%) *
+******************************************************************************
+
+Program Size: data=22.0 xdata=0 code=296
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

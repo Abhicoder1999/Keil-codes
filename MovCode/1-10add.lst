@@ -1,0 +1,40 @@
+A51 MACRO ASSEMBLER  1_10ADD                                                              06/25/2018 12:41:58 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+NO OBJECT MODULE REQUESTED
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE ..\LoopCode\1-10add.a51 SET(SMALL) DEBUG PRINT(.\1-10add.lst) OBJECT(.\
+                      1-10add.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     org 00h
+                       2             
+0000 75F00A            3             mov b,#10
+0003                   4             loop :
+0003                   5                     add r0,b
+*** _____________________________________________^
+*** ERROR #A40 IN 5 (..\LoopCode\1-10add.a51, LINE 5): INVALID REGISTER
+0003                   6             loop :
+*** _________________________________^
+*** ERROR #A8 IN 6 (..\LoopCode\1-10add.a51, LINE 6): ATTEMPT TO DEFINE AN ALREADY DEFINED LABEL
+0003 25F0              7                     add a,b
+0005 D5F0FB            8             DJNZ b,loop
+                       9             
+                      10     end
+A51 MACRO ASSEMBLER  1_10ADD                                                              06/25/2018 12:41:58 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+LOOP . . . . . . .  C ADDR   0003H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 2 ERROR(S)

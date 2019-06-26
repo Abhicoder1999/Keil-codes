@@ -1,0 +1,61 @@
+A51 MACRO ASSEMBLER  R0ANDAUSING                                                          06/23/2018 17:27:39 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+NO OBJECT MODULE REQUESTED
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE ..\AddOp\R0andAusing.asm SET(SMALL) DEBUG PRINT(.\R0andAusing.lst) OBJE
+                      CT(.\R0andAusing.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     org 00h
+                       2             
+                       3     ; CASE-1
+                       4     ;mov r0,#32h
+                       5     ;mov r1,#23h
+                       6     ;add r0,r1 here r0 = r0 + r1 nut it will show error as the airthmatic operations are done u
+                             sing accumulator only!!! 
+                       7     ;   'INVALID REGISTOR'
+                       8                     
+                       9     ; CASE-2
+                      10     ;mov a,#32h
+                      11     ;mov r1,#23h
+                      12     ;add a,r1  In this case only '1' operand apart from a is required
+                      13     ;and in this 2 operands also causes the error message
+                      14     
+                      15     ; CASE-3
+0000 7832             16     mov r0,#32h
+0002 7923             17     mov r1,#23h
+0004                  18     add b,r1,r0   
+*** _________________________^
+*** ERROR #A38 IN 18 (..\AddOp\R0andAusing.asm, LINE 18): NUMBER OF OPERANDS DOES NOT MATCH INSTRUCTION
+                      19     
+                      20     ; CASE-4
+                      21     ;mov r0,#32h
+                      22     ;mov r1,#23h
+                      23     ;add r2,r1,r0   "It will show syntac error and NUmber of operands doesnot match"
+                      24     
+                      25     ; All the arithmatic instructions can be done with the help of only accumulator
+                      26     
+                      27     ;and if you want to store the value off addition in B then
+                      28     ;mov b,#32h
+                      29     ;mov a,#23h
+                      30     ;add a,b
+                      31     ;mov b,a
+                      32     
+                      33     end
+A51 MACRO ASSEMBLER  R0ANDAUSING                                                          06/23/2018 17:27:39 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 1 ERROR(S)

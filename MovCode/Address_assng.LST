@@ -1,0 +1,56 @@
+A51 MACRO ASSEMBLER  ADDRESS_ASSNG                                                        06/28/2018 18:13:10 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN Address_assng.OBJ
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE Address_assng.a51 SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     org 00h
+                       2             ;mov 40h,#55h
+                       3             ;mov 41h,#55h
+                       4             ;mov 42h,#55h
+                       5             ;mov 43h,#55h
+                       6             ;mov 44h,#55h
+                       7             ;mov 45h,#55h
+                       8     
+                       9             ;mov a,#55h
+                      10             ;mov r0,#40h
+                      11             ;mov @r0,a ;40h
+                      12             ;inc r0
+                      13             ;mov @r0,a ;41h
+                      14             ;inc r0
+                      15             ;mov @r0,a ;42h
+                      16             ;inc r0
+                      17             ;mov @r0,a ;43h
+                      18             ;inc r0
+                      19             ;mov @r0,a ;44h
+                      20             ;inc r0
+                      21             ;mov @r0,a ;45h
+                      22             ;inc r0
+                      23             
+                      24             
+0000 7455             25             mov a,#55h
+0002 7840             26             mov r0,#40h
+                      27             
+0004                  28             loop :
+0004 F6               29                     mov @r0,a
+0005 08               30                     inc r0
+0006 B846FB           31             cjne r0,#46h,loop       
+                      32     end
+A51 MACRO ASSEMBLER  ADDRESS_ASSNG                                                        06/28/2018 18:13:10 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+LOOP . . . . . . .  C ADDR   0004H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

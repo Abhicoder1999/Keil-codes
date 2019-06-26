@@ -1,0 +1,72 @@
+A51 MACRO ASSEMBLER  LOOPCODE1                                                            06/25/2018 12:26:15 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN .\LoopCode1.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE ..\LoopCode\LoopCode1.a51 SET(SMALL) DEBUG PRINT(.\LoopCode1.lst) OBJEC
+                      T(.\LoopCode1.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     org 00h
+                       2             ;; IF YOU ARE NOT USING LOOP FOR ADDING NATURAL NUMBERS UPTO 5 
+                       3             
+                       4             ;mov a,#0
+                       5             ;mov b,#1
+                       6             ;add a,b
+                       7             
+                       8             ;mov a,#0
+                       9             ;mov b,#2
+                      10             ;add a,b
+                      11     
+                      12             ;mov a,#0
+                      13             ;mov b,#2
+                      14             ;add a,b
+                      15             
+                      16             ;mov a,#0
+                      17             ;mov b,#3
+                      18             ;add a,b
+                      19             
+                      20             ;mov a,#0
+                      21             ;mov b,#4
+                      22             ;add a,b
+                      23             
+                      24             ;mov a,#0
+                      25             ;mov b,#5
+                      26             ;add a,b
+                      27             
+                      28             ;; IF YOU ARE USING LOOP FOR ADDING NATURAL NUMBERS UPTO 5 (METHORD 1)
+                      29             ;mov r0,#5
+                      30             ;loop : add a,r0 ;here loop is a label
+                      31             ;DJNZ r0,loop ; Decrement then Jump if Not equal to Zero (DJNZ) and the next parame
+                             ter the label to jump
+                      32     
+                      33             ;; IF YOU ARE USING LOOP FOR ADDING NATURAL NUMBERS UPTO 5 (METHORD 2)
+                      34             
+0000 7400             35             mov a,#0
+0002 75F000           36             mov b,#0
+0005 7805             37             mov r0,#5
+                      38             
+0007                  39             loop : 
+0007 05F0             40                     inc b
+0009 25F0             41                     add a,b
+000B D8FA             42             DJNZ r0,loop
+                      43             
+                      44             
+                      45     end
+A51 MACRO ASSEMBLER  LOOPCODE1                                                            06/25/2018 12:26:15 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+LOOP . . . . . . .  C ADDR   0007H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

@@ -1,0 +1,39 @@
+A51 MACRO ASSEMBLER  BANK0_1_2_3STORE                                                     06/23/2018 17:36:47 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN .\Bank0,1,2,3store.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE ..\AddOp\Bank0,1,2,3store.asm SET(SMALL) DEBUG PRINT(.\Bank0,1,2,3store
+                      .lst) OBJECT(.\Bank0,1,2,3store.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     org 00h
+0000 750015            2             mov 0x00,#15h
+0003 750820            3             mov 0x08,#20h
+0006 751020            4             mov 0x10,#20h
+                       5             
+0009 2508              6             add a,0x08
+000B 2500              7             add a,0x00
+000D 2510              8             add a,0x10
+000F F518              9             mov 0x18,a
+                      10             
+                      11             ;add b,0x00,0x08
+                      12             ;add b,b,0x10
+                      13             ;mov 0x18,b
+                      14             
+                      15     end
+A51 MACRO ASSEMBLER  BANK0_1_2_3STORE                                                     06/23/2018 17:36:47 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

@@ -1,0 +1,44 @@
+A51 MACRO ASSEMBLER  COMPLIMENT_DISPLAY                                                   06/30/2018 17:39:59 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN .\Compliment_Display.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE ..\PortProgramming\Compliment_Display.a51 SET(SMALL) DEBUG PRINT(.\Comp
+                      liment_Display.lst) OBJECT(.\Compliment_Display.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     org 00h
+0000 7400              2             mov a,#0h  ; This is good part include this to avoid confusion and storing of the g
+                             arbage values in a
+0002 7813              3             mov r0,#13h
+0004 8880              4             mov P0,r0
+0006 28                5             add a,r0
+                       6             
+0007 7917              7             mov r1,#17h
+0009 89B0              8             mov P3,r1
+000B 29                9             add a,r1
+                      10             
+000C F5A0             11             mov P2,a
+                      12             
+000E F4               13             cpl a
+000F F590             14             mov P1,a
+                      15     end
+A51 MACRO ASSEMBLER  COMPLIMENT_DISPLAY                                                   06/30/2018 17:39:59 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+P0 . . . . . . . .  D ADDR   0080H   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+P2 . . . . . . . .  D ADDR   00A0H   A   
+P3 . . . . . . . .  D ADDR   00B0H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

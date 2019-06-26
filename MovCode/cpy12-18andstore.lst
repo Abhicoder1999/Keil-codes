@@ -1,0 +1,44 @@
+A51 MACRO ASSEMBLER  CPY12_18ANDSTORE                                                     06/23/2018 18:17:41 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN .\cpy12-18andstore.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE ..\AddOp\cpy12-18andstore.asm SET(SMALL) DEBUG PRINT(.\cpy12-18andstore
+                      .lst) OBJECT(.\cpy12-18andstore.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     org 00h
+                       2             
+0000 750C30            3             mov 12,#30h
+0003 250C              4             add a,12
+0005 850C0D            5             mov 13,12
+0008 250D              6             add a,13
+000A 850D0E            7             mov 14,13
+000D 250E              8             add a,14
+000F 850E0F            9             mov 15,14
+0012 250F             10             add a,15
+0014 850F10           11             mov 16,15
+0017 2510             12             add a,16
+0019 851011           13             mov 17,16
+001C 2511             14             add a,17
+001E 851112           15             mov 18,17
+0021 2512             16             add a,18
+0023 F500             17             mov 0,a
+                      18             
+                      19             
+                      20     end
+A51 MACRO ASSEMBLER  CPY12_18ANDSTORE                                                     06/23/2018 18:17:41 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)
